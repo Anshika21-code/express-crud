@@ -12,6 +12,8 @@ const authRouter = require("./routes/api/auth");
 const refreshTokenRouter = require("./routes/api/refresh");
 const logoutRouter = require("./routes/api/logout");
 const cookieParser = require("cookie-parser");
+const corsOptions = require("./middleware/corsOptions");
+
 
 const app = express();
 const port = process.env.PORT || 3000;
